@@ -307,6 +307,10 @@ body {
     }
     .social-media{
         width: 30%;
+        
+    }
+    .fa{
+        font-size: 18px !important;
     }
     .menu{
         display: none
