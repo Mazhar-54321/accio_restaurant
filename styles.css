@@ -222,7 +222,6 @@ body {
     
   }
   
-  /* Column 1: one image across 3 rows */
   .box1 {
     grid-column: 1;
     grid-row: 1 / span 3; 
@@ -254,7 +253,6 @@ body {
     height: 300px;
 }
 
-/* Column 1, normal text and location */
 
  .row-0 {
     grid-column:1;
@@ -274,7 +272,6 @@ body {
     
 }
 
-/* Column 2 should span all 3 rows */
 .column2 {
     grid-row: 1 / span 3;  /* Span across all 3 rows */
     grid-column: 2; /* Place in the second column */
@@ -283,7 +280,6 @@ body {
     overflow: hidden; /* Hide overflow */
 }
 
-/* Image inside Column 2 should cover the entire column */
 .column2 img {
     width: 100%; /* Ensure it fills the container width */
     height: 100%; /* Ensure it takes 100% of the height */
@@ -300,7 +296,53 @@ body {
     align-items: center;
 }
   
+@media (max-width: 600px){
+  .header{
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+    .logo{
+        width: 40%;
+        margin-left: 10px;
+    }
+    .social-media{
+        width: 30%;
+    }
+    .menu{
+        display: none
+    }
+  }
+  .main-container{
+    margin:20px 10px 0 10px;
+    overflow-x: hidden;
+    
+    .about-us .content{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        p{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+           
+    }
+    
+  }
+  .menu-catalog{
+    display: flex;
+    flex-direction: column;
+    .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+    }
+  }
   
+
+}
 
   
   
